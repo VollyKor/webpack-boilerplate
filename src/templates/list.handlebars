@@ -1,0 +1,47 @@
+<main>
+    <ul class="product-list">
+        {{#each this}}
+        <li class="product-item">
+            <div class="product-item__logo"><img src="" alt="logo" /></div>
+            <p class="product-item__serial">Model: {{ID}}</p>
+            <h2 class="product-item__title">{{NAME}}</h2>
+            <p class="product-item__desc">{{DESCRIPTION}}</p>
+
+            <div class="ratio">
+                <div class="ratio__stars">1,2,3,4,5</div>
+                <span class="ratio__number">{{RAT.RATING}}</span>
+                <span class="ratio__reviews">({{RAT.REVIEWS}} reviews)</span>
+            </div>
+
+            <div class="price-wrapper flex space-between">
+                <div class="price">{{PRICE}}</div>
+                <div class="color-picker">
+                        <form >
+                        <label>Choose Your colors:</label>
+
+                        {{#each MODELS.COLORS}}
+                        <input type="radio" name='color' data-color={{COLOR}} id={{ID}} class="black" value={{COLOR}} />
+                        {{/each}}
+
+                        </form>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="flex space-between">
+                    <div class="quantity flex">
+                        <span class="quantity__title"> Quantity</span>
+                        <input class="quantity__number" placeholder="01" type="number" />
+                        <div class="quantity__arrows">
+                            <button class="quantity__up">up</button>
+                            <button class="quantity__down">down</button>
+                        </div>
+                    </div>
+                    <button data-id={{ID}} class="add-product"><span> Add to cart</span></button>
+                </div>
+            </div>
+            <div class="thumb"><img src="" alt="headphones" /></div>
+        </li>
+        {{/each}}
+    </ul>
+</main>

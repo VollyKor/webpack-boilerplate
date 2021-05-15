@@ -1,0 +1,41 @@
+.product-item {
+  &__logo {
+    margin-bottom: 54px;
+  }
+
+  &__serial {
+    color: grey;
+
+    font-size: 12px;
+    line-height: 35px;
+    letter-spacing: 1.2px;
+
+    margin-bottom: 27px;
+
+    font-family: $font-light;
+  }
+
+  &__title {
+    font-family: $font-bold;
+
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.75px;
+
+    margin-bottom: 32px;
+  }
+
+  &__desc {
+    font-family: $font-regular;
+
+    font-weight: 500;
+
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 0.35px;
+
+    margin-bottom: 29px;
+
+    color: $black;
+  }
+}

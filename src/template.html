@@ -5,10 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title>Epic test</title>
   </head>
-
   <body>
-    <div id="root"></div>
+    <div class="container">
+      <header class="header">
+        <button class="cart">
+          <img
+            class="cart__icon"
+            src="../assets/cart-icon.png"
+            alt="cart icon"
+            width="20px"
+            height="25px"
+          />
+        </button>
+      </header>
+
+      <main>
+        <ul id="products" class="product-list">
+          <!-- <li class="product-item">
+            <div class="product-item__logo"><img src="" alt="logo" /></div>
+            <p class="product-item__serial">Model: 505795</p>
+            <h2 class="product-item__title">Momentum Wireless Black</h2>
+            <p class="product-item__desc">
+              Peak performance with active noise cancelation. Sennheiser's new
+              MOMENTUM Wireless - Closed circumaural headphone featuring
+              Bluetooth® wireless technology and NoiseGard Hybrid active noise
+              cancelation
+            </p>
+
+            <div class="ratio">
+              <div class="ratio__stars">1,2,3,4,5</div>
+              <span class="ratio__number">4.25</span>
+              <span class="ratio__reviews">(153 reviews)</span>
+            </div>
+            <div class="price-wrapper flex space-between">
+              <div class="price">499.95</div>
+              <div class="color-picker">
+                <p>Choose Your colors:</p>
+                <div class="black">black</div>
+                <div class="blue">blue</div>
+              </div>
+            </div>
+
+            <div class="block">
+              <div class="flex space-between">
+                <div class="quantity flex">
+                  <span class="quantity__title"> Quantity</span>
+                  <input
+                    class="quantity__number"
+                    placeholder="01"
+                    type="number"
+                  />
+                  <div class="quantity__arrows">
+                    <button class="quantity__up">up</button>
+                    <button class="quantity__down">down</button>
+                  </div>
+                </div>
+                <button class="add-product"><span> Add to cart </span></button>
+              </div>
+            </div>
+            <div class="thumb"><img src="" alt="headphones" /></div>
+          </li> -->
+        </ul>
+      </main>
+    </div>
   </body>
 </html>

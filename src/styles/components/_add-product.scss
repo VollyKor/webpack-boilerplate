@@ -1,0 +1,19 @@
+.add-product {
+  box-sizing: border-box;
+  padding: 16px 28px;
+
+  & > span {
+    font-size: 17px;
+    line-height: 0.43px;
+    letter-spacing: 0.43px;
+  }
+
+  background-color: $blue;
+  color: $white;
+
+  border: none;
+
+  &:hover {
+    outline: 1px solid black;
+  }
+}

@@ -1,0 +1,25 @@
+.ratio {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 26px;
+
+  &__number {
+    margin-left: 15px;
+
+    font-size: 15px;
+    line-height: 35px;
+    letter-spacing: 1.5px;
+
+    color: $red;
+  }
+
+  &__reviews {
+    margin-left: 5px;
+
+    font-size: 13px;
+    letter-spacing: 0.33px;
+
+    color: $grey;
+  }
+}

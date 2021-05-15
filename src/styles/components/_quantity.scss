@@ -1,0 +1,35 @@
+.quantity {
+  &__title {
+    font-size: 13px;
+    letter-spacing: 0.65px;
+  }
+
+  &__number {
+    width: 52px;
+    height: 46px;
+
+    margin-left: 9px;
+    text-align: center;
+
+    line-height: 35px;
+    letter-spacing: 0.45px;
+
+    color: $black;
+  }
+
+  &__arrows {
+    padding: 7px;
+    height: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-left: 11px;
+  }
+
+  &__up,
+  &__down {
+    width: 10px;
+    height: 10px;
+  }
+}

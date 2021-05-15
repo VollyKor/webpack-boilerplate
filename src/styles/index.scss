@@ -1,7 +1,18 @@
-@font-face {
-  font-family: 'Inter';
-  src: url('../fonts/Inter.ttf');
-}
+// Base
+@import "./base/fonts";
+@import "./base/variables";
+@import "./base/common";
 
-@import 'variables';
-@import 'scaffolding';
+// Utils
+
+@import "./utils/flex-box";
+@import "./utils/container";
+
+// Components
+@import "./components/cart";
+@import "./components/price";
+@import "./components/scaffolding";
+@import "./components/productlist";
+@import "./components/ratio";
+@import "./components/quantity";
+@import "./components/add-product";
