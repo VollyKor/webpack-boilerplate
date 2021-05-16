@@ -1,0 +1,37 @@
+.color-picker {
+  display: flex;
+  justify-content: flex-end;
+  &__label {
+    display: block;
+    width: 18px;
+    height: 18px;
+
+    border-radius: 50%;
+    background-color: yellow;
+
+    z-index: 100;
+  }
+
+  &__bckg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    width: 26px;
+    height: 26px;
+
+    margin-top: 5px;
+
+    background-color: $white;
+
+    &:not(:last-child) {
+      margin-right: 7px;
+    }
+
+    &.active {
+      box-shadow: 0px 0px 10px 3px rgba(76, 108, 234, 0.4);
+    }
+  }
+}

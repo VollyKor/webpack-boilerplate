@@ -15,8 +15,8 @@
             class="cart__icon"
             src="../assets/cart-icon.png"
             alt="cart icon"
-            width="20px"
-            height="25px"
+            width="20"
+            height="25"
           />
         </button>
       </header>
@@ -41,10 +41,29 @@
             </div>
             <div class="price-wrapper flex space-between">
               <div class="price">499.95</div>
-              <div class="color-picker">
-                <p>Choose Your colors:</p>
-                <div class="black">black</div>
-                <div class="blue">blue</div>
+              <div>
+                <p>Chose your color</p>
+                <form class="color-picker">
+                  <div class="color-picker__bckg">
+                    <label class="color-picker__label">
+                      <input
+                        class="visually-hidden"
+                        name="color"
+                        type="radio"
+                      />
+                    </label>
+                  </div>
+                  <div class="color-picker__bckg">
+                    <label class="color-picker__label">
+                      <input
+                        checked
+                        class="visually-hidden"
+                        name="color"
+                        type="radio"
+                      />
+                    </label>
+                  </div>
+                </form>
               </div>
             </div>
 
@@ -58,14 +77,30 @@
                     type="number"
                   />
                   <div class="quantity__arrows">
-                    <button class="quantity__up">up</button>
-                    <button class="quantity__down">down</button>
+                    <button class="quantity__up">
+                      <img
+                        class="arrow-icon rotate"
+                        src="../assets/arrow-down.png"
+                        alt="arrow icon"
+                        width="10"
+                      />
+                    </button>
+                    <button class="quantity__down">
+                      <img
+                        class="arrow-icon"
+                        src="../assets/arrow-down.png"
+                        alt=" arrow icon"
+                        width="10"
+                      />
+                    </button>
                   </div>
                 </div>
                 <button class="add-product"><span> Add to cart </span></button>
               </div>
             </div>
             <div class="thumb"><img src="" alt="headphones" /></div>
+            <div class="carousel">Carousel</div>
+            <div class="image-icons">Imageicons</div>
           </li> -->
         </ul>
       </main>

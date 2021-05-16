@@ -15,21 +15,30 @@
     letter-spacing: 0.45px;
 
     color: $black;
+    // border-color: $grey;
+    outline: none;
+    border: 1ps solid $input-border-color;
   }
 
   &__arrows {
-    padding: 7px;
+    // padding: 7px 0px;
     height: 32px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    margin-left: 11px;
   }
 
   &__up,
   &__down {
-    width: 10px;
-    height: 10px;
+    padding: 0 9px;
+
+    border: none;
+
+    background-color: transparent;
+    // width: 10px;
+    // height: 10px;
+  }
+  &__up {
+    transform: rotate(180deg);
   }
 }

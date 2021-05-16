@@ -7,6 +7,7 @@
 
 @import "./utils/flex-box";
 @import "./utils/container";
+@import "./utils/visually-hidden";
 
 // Components
 @import "./components/cart";
@@ -16,3 +17,5 @@
 @import "./components/ratio";
 @import "./components/quantity";
 @import "./components/add-product";
+@import "./components/checkbox";
+@import "./components//thumb";

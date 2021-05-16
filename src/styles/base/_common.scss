@@ -3,14 +3,19 @@ body {
   margin: 0;
 
   font-family: $font-regular, sans-serif;
-  font-weight: black;
 
   color: $black;
   background-color: $blue;
 }
 
+img,
+button {
+  display: block;
+}
+
 ul,
-p {
+p,
+button {
   list-style: none;
 
   margin: 0;
