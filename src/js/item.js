@@ -65,7 +65,6 @@ products.map((e) => {
   listRef.insertAdjacentHTML("beforeend", template);
 
   colorPickerController(e);
-
   qtyController(rootId);
   addToCartController(rootId);
 });
