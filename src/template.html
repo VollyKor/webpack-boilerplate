@@ -15,95 +15,36 @@
             class="cart__icon"
             src="../assets/cart-icon.png"
             alt="cart icon"
-            width="20"
-            height="25"
           />
+          <p class="cart__notification" id="main-notification"><span>0</span></p>
         </button>
       </header>
 
       <main>
         <ul id="products" class="product-list">
-          <!-- <li class="product-item">
-            <div class="product-item__logo"><img src="" alt="logo" /></div>
-            <p class="product-item__serial">Model: 505795</p>
-            <h2 class="product-item__title">Momentum Wireless Black</h2>
-            <p class="product-item__desc">
-              Peak performance with active noise cancelation. Sennheiser's new
-              MOMENTUM Wireless - Closed circumaural headphone featuring
-              Bluetooth® wireless technology and NoiseGard Hybrid active noise
-              cancelation
-            </p>
-
-            <div class="ratio">
-              <div class="ratio__stars">1,2,3,4,5</div>
-              <span class="ratio__number">4.25</span>
-              <span class="ratio__reviews">(153 reviews)</span>
-            </div>
-            <div class="price-wrapper flex space-between">
-              <div class="price">499.95</div>
-              <div>
-                <p>Chose your color</p>
-                <form class="color-picker">
-                  <div class="color-picker__bckg">
-                    <label class="color-picker__label">
-                      <input
-                        class="visually-hidden"
-                        name="color"
-                        type="radio"
-                      />
-                    </label>
-                  </div>
-                  <div class="color-picker__bckg">
-                    <label class="color-picker__label">
-                      <input
-                        checked
-                        class="visually-hidden"
-                        name="color"
-                        type="radio"
-                      />
-                    </label>
-                  </div>
-                </form>
-              </div>
-            </div>
-
-            <div class="block">
-              <div class="flex space-between">
-                <div class="quantity flex">
-                  <span class="quantity__title"> Quantity</span>
-                  <input
-                    class="quantity__number"
-                    placeholder="01"
-                    type="number"
-                  />
-                  <div class="quantity__arrows">
-                    <button class="quantity__up">
-                      <img
-                        class="arrow-icon rotate"
-                        src="../assets/arrow-down.png"
-                        alt="arrow icon"
-                        width="10"
-                      />
-                    </button>
-                    <button class="quantity__down">
-                      <img
-                        class="arrow-icon"
-                        src="../assets/arrow-down.png"
-                        alt=" arrow icon"
-                        width="10"
-                      />
-                    </button>
-                  </div>
-                </div>
-                <button class="add-product"><span> Add to cart </span></button>
-              </div>
-            </div>
-            <div class="thumb"><img src="" alt="headphones" /></div>
-            <div class="carousel">Carousel</div>
-            <div class="image-icons">Imageicons</div>
-          </li> -->
         </ul>
       </main>
+    </div>
+    <div class="modal">
+      <div class="modal__data">
+        <div class="modal__title">
+          <button class="modal__cart">
+            <img
+              class="cart__icon block"
+              src="../assets/cart-icon.png"
+              alt="cart icon"
+            />
+            <p class="cart__notification"><span id='notification'>0</span></p>
+          </button>
+          <div>
+            <p class="modal__subtitle"></p>
+            <p class="modal__summary">$999</p>
+          </div>
+        </div>
+        <div class="modal__products">
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

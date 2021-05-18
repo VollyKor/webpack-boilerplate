@@ -1,4 +1,6 @@
 .product-item {
+  margin-bottom: 30px;
+
   &__logo {
     margin-bottom: 54px;
   }
@@ -37,5 +39,30 @@
     margin-bottom: 29px;
 
     color: $black;
+  }
+
+  &__info {
+    max-width: 310px;
+    margin: 0 auto;
+    @media screen and(min-width: $lg) {
+      margin: 0 0;
+    }
+  }
+
+  &__wrapper {
+    @media screen and(min-width: $lg) {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row-reverse;
+    }
+  }
+
+  @media screen and(min-width: $lg) {
+  }
+}
+
+.carousel {
+  @media screen and(min-width: $lg) {
+    max-width: 310px;
   }
 }

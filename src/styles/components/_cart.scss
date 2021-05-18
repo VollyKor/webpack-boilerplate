@@ -1,6 +1,32 @@
 .cart {
   position: absolute;
 
-  top: 0;
-  right: 0;
+  background-color: transparent;
+  border: none;
+  top: 25px;
+  right: 25px;
+
+  &__icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  &__notification {
+    position: absolute;
+
+    top: -12px;
+    right: -12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 24px;
+    height: 24px;
+
+    border-radius: 50%;
+
+    color: $white;
+    background-color: $blue;
+  }
 }

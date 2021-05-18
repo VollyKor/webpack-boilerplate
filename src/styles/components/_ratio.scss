@@ -3,6 +3,23 @@
   align-items: center;
 
   margin-bottom: 26px;
+  &__stars {
+    display: flex;
+  }
+
+  &__point {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+
+    background-color: $grey;
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+    &.active {
+      background-color: yellow;
+    }
+  }
 
   &__number {
     margin-left: 15px;

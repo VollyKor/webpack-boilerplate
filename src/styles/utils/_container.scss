@@ -3,8 +3,18 @@
 
   padding: 0 16px;
 
-  max-width: 400px;
+  max-width: 95vw;
   margin: 15px auto 0 auto;
 
   background-color: $white;
+
+  @media screEn and(min-width: $sm) {
+    max-width: 354px;
+  }
+  @media screen and(min-width: $md) {
+    max-width: 600px;
+  }
+  @media screen and(min-width: $lg) {
+    max-width: 800px;
+  }
 }
