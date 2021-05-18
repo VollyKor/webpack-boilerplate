@@ -51,8 +51,34 @@
     color: $red;
   }
 
+  &__desc {
+    color: $grey;
+    text-align: center;
+
+    margin-top: 52px;
+  }
+
+  &__confirm {
+    padding: 16px 34px;
+    margin-top: 30px;
+
+    font-size: 17px;
+    line-height: 35px;
+    letter-spacing: 0.43px;
+
+    border-color: transparent;
+
+    color: $white;
+    background-color: $blue;
+
+    &:hover {
+      border-color: black;
+    }
+  }
+
   &__item {
     position: relative;
+    border-bottom: 1px solid $grey;
   }
 
   &__delbtn {
@@ -89,4 +115,8 @@
 
     color: $red;
   }
+}
+
+.modal__item > .quantity {
+  margin-bottom: 16px;
 }

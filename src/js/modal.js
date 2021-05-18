@@ -1,3 +1,7 @@
+import qtyController from "./qty-controller";
+import shortid from "shortid";
+import deleteBtn from "./deleteFromCart";
+
 const cartRef = document.querySelector(".cart");
 const modalRef = document.querySelector(".modal");
 const productsRootRef = document.querySelector(".modal__products");
@@ -6,6 +10,8 @@ const subtitleRef = document.querySelector(".modal__subtitle");
 const summaryeRef = document.querySelector(".modal__summary");
 const notificationRef = document.getElementById("notification");
 const mainNotificationRef = document.getElementById("main-notification");
+
+const summaryBtnRef = document.querySelector(".modal__confirm");
 
 cartRef.addEventListener("click", () => {
   modalRef.style.display = "block";
@@ -40,10 +46,12 @@ export function fillCart() {
   if (cartData) {
     productsRootRef.innerHTML = "";
     cartData.map((e) => {
+      const rootId = shortid.generate();
+
       const { ID, qty, NAME, PRICE, IMAGES } = e;
 
       const template = `
-            <div class="modal__item">
+            <div class="modal__item" id="${rootId}" data-id="${e.ID}">
               <button class="modal__delbtn">X</button>
               <div class="modal-thumb">
                 <img
@@ -57,9 +65,9 @@ export function fillCart() {
               <p class="modal__item__title">${NAME}</p>
               <p class="modal__item__price">${PRICE}</p>
               <div class="quantity flex justify">
-                <input class="quantity__number" placeholder="01" value="${qty}" type="number" />
+                <input class="quantity__number" placeholder="01" data-qnty value="${qty}" type="number" />
                 <div class="quantity__arrows">
-                  <button class="quantity__up">
+                  <button class="quantity__up" data-inc>
                     <img
                       class="arrow-icon rotate"
                       src="../assets/arrow-down.png"
@@ -67,7 +75,7 @@ export function fillCart() {
                       width="10"
                     />
                   </button>
-                  <button class="quantity__down">
+                  <button class="quantity__down" data-dec>
                     <img
                       class="arrow-icon block"
                       src="../assets/arrow-down.png"
@@ -80,6 +88,9 @@ export function fillCart() {
             </div>
   `;
       productsRootRef.insertAdjacentHTML("beforeend", template);
+
+      qtyController(rootId);
+      deleteBtn(rootId);
     });
   }
 }

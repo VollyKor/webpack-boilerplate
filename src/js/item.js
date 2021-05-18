@@ -2,6 +2,7 @@ import shortid from "shortid";
 
 import { fillCart } from "./modal";
 import colorPickerController from "./color-picker";
+import qtyController from "./qty-controller";
 
 const { ITEMS: products } = JSON.parse(localStorage.getItem("products"));
 
@@ -123,28 +124,6 @@ products.map((e) => {
 });
 
 // qty controller
-function qtyController(rootId) {
-  const rootRef = document.getElementById(rootId);
-
-  const qtyRef = rootRef.querySelector("input[data-qnty]");
-  const incButton = rootRef.querySelector("button[data-inc]");
-  const decButton = rootRef.querySelector("button[data-dec]");
-
-  incButton.addEventListener("click", (e) => {
-    let qty = parseInt(qtyRef.value, 10);
-    qty += 1;
-
-    qtyRef.value = qty.toString().padStart(2, "0");
-  });
-
-  decButton.addEventListener("click", () => {
-    let qty = parseInt(qtyRef.value, 10);
-    if (qty === 0) return;
-    qty -= 1;
-
-    qtyRef.value = qty.toString().padStart(2, "0");
-  });
-}
 
 //  addToCart controller
 function addToCartController(rootId) {
@@ -277,3 +256,5 @@ function carouselController(rootId, data) {
     imgRef.src = imagesArr[imgIndex + 1];
   });
 }
+
+fillCart();
